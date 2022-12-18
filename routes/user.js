@@ -12,4 +12,12 @@ router.post('/upload', auth.verify_token, article_controller.upload_file, articl
 
 });
 
+router.post('/upload_patchnote', auth.verify_token, article_controller.upload_patchnote, (req, res) => {
+
+});
+
+router.post('/upload_video', auth.verify_token, article_controller.upload_video, (req, res) => {
+    
+});
+
 module.exports = router;
